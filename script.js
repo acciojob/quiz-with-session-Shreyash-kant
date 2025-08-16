@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     userAnswers = JSON.parse(sessionStorage.getItem("progress"));
   }
   const score = localStorage.getItem("score");
-  if (score) scoreContainer.textContent = `Your score is ${score} out of 5`;
+  if (score) scoreContainer.textContent = `Your score is ${score} out of 5.`;
   renderQuestions();
 });
 
@@ -72,7 +72,7 @@ submitButton.addEventListener("click", () => {
     });
   }
   localStorage.setItem("score", count);
-  scoreContainer.textContent = `Your score is ${count} out of 5`;
+  scoreContainer.textContent = `Your score is ${count} out of 5.`;
 });
 // Do not change code below this line
 // This code will just display the questions to the screen
